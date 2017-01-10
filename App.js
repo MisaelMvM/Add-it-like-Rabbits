@@ -18,9 +18,6 @@ function setup() {
 function draw() { 
 }
 
-for (var i = 0; i < rabbits.length; i++) {
-    console.log(rabbits[i]);
-}
 document.write("Total Rabbits: " + totalRabbits); 
 
     
