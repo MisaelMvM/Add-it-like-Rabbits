@@ -1,24 +1,51 @@
 var rabbits = [];
+var startRabbitsAmount = 2;
+var daysTotest = 365;
 
-function timeLine(duration, rabbits) {
+function lifeTime(duration, rabbits) {
+    
     for (var i = 0; i < rabbits.length; i++){
-        Time(duration, rabbits[i]);
+        
+       // console.log( rabbits[i]); 
+        Time(duration, rabbits[i], rabbits[i].birthDay);
+        
     }
 }
 
-for (var i = 0; i <= 4; i++) {
-    rabbits[i] = new Bunny();
+function creatingRabbits(amount) {
+    for (var i = 0; i < amount; i++) {
+        rabbits[i] = new Bunny();
+    }
 }
 
-var totalRabbits = 4;
-timeLine(365, rabbits)
 
-function setup() {
-} 
-function draw() { 
+function addingRabbits(amount, birthDay) {
+    for (var i = 0; i < amount; i++) {
+        rabbits.push(new Bunny(birthDay));
+    }
 }
 
-document.write("Total Rabbits: " + totalRabbits); 
+function deletingRabbits(index) {
+    for (var i = rabbits.length - 1; i > 0 ; i--) {
+        rabbits.splice(rabbits[index]);
+    }
+}
+
+function main() {
+    
+    
+    creatingRabbits(startRabbitsAmount);
+    
+    
+    lifeTime(daysTotest, rabbits);
+    
+    
+    document.write("Total Rabbits: " + rabbits.length); 
+}
+
+main();
+
+
 
     
     
