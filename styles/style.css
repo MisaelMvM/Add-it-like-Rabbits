@@ -27,7 +27,8 @@ td.add {
     border: 0;
 }
 td {
-    padding: 10px;
+    
+    padding: 0px;
 }
 button.bt {
     background-image: url(../images/add35px.png);
@@ -35,6 +36,7 @@ button.bt {
     background-position: 50% 50%;
     height: 35px;
     width: 35px;
+    margin-left: 18px;
     border: none;
     border-radius: 120px;
 }
@@ -45,9 +47,9 @@ table {
     padding: 30px;
     border: 2px solid black;
     border-collapse: separate;
+    width: 53%;
 }
 table, th, td {
     text-align: center;
     vertical-align: middle;
-    border: 3px solid black;
 }
