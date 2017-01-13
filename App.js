@@ -30,9 +30,12 @@ function deletingRabbits(index) {
         rabbits.splice(rabbits[index]);
     }
 }
+function myFunction() {
+    alert("Button Pressed!");
+}
+
 
 function main() {
-    
     
     creatingRabbits(startRabbitsAmount);
     
@@ -40,11 +43,11 @@ function main() {
     lifeTime(daysTotest, rabbits);
     
     
-    document.write("Total Rabbits: " + rabbits.length); 
+//    document.write("Total Rabbits: " + rabbits.length); 
 }
 
-main();
 
+main();
 
 
     

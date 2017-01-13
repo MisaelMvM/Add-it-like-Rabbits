@@ -2,16 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Like a Rabbit</title>
+    <title>Add it Like Rabbits</title>
+    
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
-    <style>    
-    </style>
-</head>
-<body>
     <script src="Rabbit.js"></script>
     <script src="Running.js"></script>
     <script src="App.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>ADD IT LIKE RABBITS</h1>    
+    </header>
+    
+    <nav>
+        <table>
+            <tr>
+                <th><p>SEX</p></th>
+                <th><p>AGE</p></th>
+                <th><p>AMOUNT</p></th>
+            </tr>
+            <tr>
+                <td><input type="checkbox">M<input type="checkbox">F</td>
+                <td><input type="text" size="10"></td>
+                <td><input type="text" size="10"></td>
+                <td class="add"><button type="button" class="bt"></button></td>
+            </tr>        
+        </table>
+    </nav>
 </body>
 </html>
