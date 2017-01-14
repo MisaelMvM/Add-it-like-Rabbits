@@ -7,27 +7,30 @@ h1 {
     width: 55%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 31px 18px -8px black;
+    box-shadow: 0px 15px 18px -8px black;
     background: purple;
 }
+h1.list {
+    box-shadow: 0px -15px 18px -8px black;
+}
 p {
-    font-size: 25px;
+    font-size: 100%;
 }
 th {
     background: orange;
     height: 0px;
     width: 188px;
     padding: 0px;
+    border-radius: 10px;
 }
 
 td.add {
     text-align: center;
     vertical-align: middle;
     width: 35px;
-    border: 0;
+    border: none;
 }
 td {
-    
     padding: 0px;
 }
 button.bt {
@@ -45,8 +48,8 @@ table {
     margin-right: auto;
     box-shadow: inset 1px 0px 20px 11px blue;
     padding: 30px;
-    border: 2px solid black;
-    border-collapse: separate;
+    border: 2px hidden black;
+    border-radius: 65px;
     width: 53%;
 }
 table, th, td {
