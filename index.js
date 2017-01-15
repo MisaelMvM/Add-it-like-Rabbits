@@ -1,11 +1,7 @@
 var rabbits = [];
-var startRabbitsAmount = amount;
+var startRabbitsAmount = 2;
 var daysTotest = 190;
-
-var sex = "";
-var age = 0;
-var amount = 0;
-
+var sex, age, amount;
 function main() {
     
     creatingRabbits(startRabbitsAmount);
@@ -13,23 +9,16 @@ function main() {
     
     lifeTime(daysTotest, rabbits);
     
-    
-    var x = document.createElement("INPUT");
-    x.setAttribute("type", "text");
-    x.setAttribute("value", "Total Rabbits: " + rabbits.length);
-    document.body.appendChild(x);
+    console.log(rabbits.lenght + "\n" + sex + " " + age + " " + amount);
 }
 
 
 function myFunction(){
-    if (document.getElementById("sexM").checked) {
-        sex = document.getElementById("sexM").value;
-    } else if (document.getElementById("sexF").checked) {
-        sex = document.getElementById("sexF").value;
-    }
-    
-    age = document.getElementById("age").value;
-    amount = document.getElementById("amount").value;
+    var sex = (document.getElementById("sexF").checked === true)? document.getElementById("sexF").value : (document.getElementById("sexM").checked === true)? document.getElementById("sexM").value : alert("No Sex declareted!");
+
+
+    var age = document.getElementById("age").value;
+    var amount = document.getElementById("amount").value;
     
     main();
 }
